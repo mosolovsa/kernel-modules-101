@@ -1,0 +1,9 @@
+1. Выйти из -nographic:
+`Ctrl-A, X`
+
+2. Зайти в консоль QEMU:
+`Ctrl-A, C`
+
+3. `-net user` - не доступно из внешки, но можно прокинуть порт из QEMU через аргументы командной строки:
+``
+(больше: https://wiki.qemu.org/Documentation/Networking)

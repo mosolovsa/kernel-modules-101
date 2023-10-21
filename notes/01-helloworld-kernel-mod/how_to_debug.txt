@@ -1,0 +1,14 @@
+В Makefile добавить:
+`ccflags-y += -g -DDEBUG`
+
+Затем в машине которую отлаживаешь сделатьo:
+```
+# cat /proc/modules 
+mymod 16384 0 - Live 0x7f000000 (O)
+```
+Запомнить адрес - в gdb загрузить по этому адресу символы mymod.ko:
+```
+add-symbol-file ~/projects/learn/qemulinux/kernmods/01-hw/mymod.ko 0x7f000000
+```
+ставим брэейкпоинты и это работает
+

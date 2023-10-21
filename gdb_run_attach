@@ -1,0 +1,2 @@
+gdb-multiarch -ex 'target remote :1234' buildroot-2022.08.3/output/build/linux-5.15.18/vmlinux
+

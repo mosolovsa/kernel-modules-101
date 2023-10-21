@@ -1,0 +1,6 @@
+buildroot deps:
+`sudo apt install sed make binutils build-essential diffutils gcc g++ bash patch gzip bzip2 perl tar cpio unzip rsync file bc findutils wget`
+
+buildroot: buildroot-2022.08.3 defconfig: `make qemu_arm_vexpress_defconfig`
+
+configs: папка с конфигами buildroot и kernel
